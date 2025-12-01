@@ -8,7 +8,7 @@ import type {
 import { LinkPreset } from "./types/config";
 
 export const siteConfig: SiteConfig = {
-	title: "Kevin Le",
+	title: "Blogs",
 	subtitle: "Kevin's Blog",
 	lang: "en", // Language code, e.g. 'en', 'zh_CN', 'ja', etc.
 	themeColor: {
@@ -16,8 +16,8 @@ export const siteConfig: SiteConfig = {
 		fixed: false, // Hide the theme color picker for visitors
 	},
 	banner: {
-		enable: false,
-		src: "assets/images/FIeab_bUYAALjZK.jpg", // Relative to the /src directory. Relative to the /public directory if it starts with '/'
+		enable: true,
+		src: "assets/images/Half-Dome.png", // Relative to the /src directory. Relative to the /public directory if it starts with '/'
 		position: "center", // Equivalent to object-position, only supports 'top', 'center', 'bottom'. 'center' by default
 		credit: {
 			enable: false, // Display the credit text of the banner image
@@ -41,8 +41,9 @@ export const siteConfig: SiteConfig = {
 
 export const navBarConfig: NavBarConfig = {
 	links: [
-		LinkPreset.Archive,
 		LinkPreset.About,
+    LinkPreset.Projects,
+		LinkPreset.Archive,
 		{
 			name: "GitHub",
 			url: "https://github.com/MrGrinchFx", // Internal links should not include the base path, as it is automatically added
@@ -54,7 +55,7 @@ export const navBarConfig: NavBarConfig = {
 export const profileConfig: ProfileConfig = {
 	avatar: "assets/images/FIeab_bUYAALjZK.jpg", // Relative to the /src directory. Relative to the /public directory if it starts with '/'
 	name: "Kevin Le",
-	bio: "ML Infra Engineer and Researcher @ UC Davis",
+	bio: "Systems Engineer and Researcher @ UC Davis",
 	links: [
 		{
 			name: "Twitter",
