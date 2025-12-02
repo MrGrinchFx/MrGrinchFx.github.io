@@ -5,7 +5,7 @@ description: "How to use this blog template."
 image: "./cover.jpeg"
 tags: ["Fuwari", "Blogging", "Customization"]
 category: Guides
-draft: false
+draft: true
 ---
 
 > Cover image source: [Source](https://www.si.com/.image/t_share/MTk1NjkzNDUxNjc1NzA3Mjc1/si_lebron_james_00021.jpg)
