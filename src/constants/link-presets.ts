@@ -15,8 +15,4 @@ export const LinkPresets: { [key in LinkPreset]: NavBarLink } = {
 		name: "Timeline",
 		url: "/archive/",
 	},
-	[LinkPreset.Projects]: {
-		name: "Projects",
-		url: "/projects/",
-	},
 };

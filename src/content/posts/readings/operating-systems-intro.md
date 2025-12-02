@@ -16,8 +16,7 @@ since I've touched this content, and it's kind of embarassing when I watch a Cod
 not knowing off the top of my head what the difference betweene a mutex and semaphore is. And so, I
 have decided to pick up this wonderful book and perch myself by the fireplace for a good read on
 Operating Systems. Hooray...
-
-![](../../../assets/images/a-good-book-can-change-your-life-v0-hstmjd732ama1.jpg)
+![Good book](../../../assets/images/a-good-book-can-change-your-life-v0-hstmjd732ama1.jpg)
 
 :::note
 This is just going to be a collection of what I've learned from each chapter, and perhaps some
