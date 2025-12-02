@@ -93,10 +93,10 @@ dequeued from the ```ready_queue```. The thread being switched from is then
 added to the end of the ```ready_queue```. ```uthread_exit()``` is called when 
 a thread has finished its execution. The running thread will be deleted and if 
 there is a thread in the ```ready_queue```, it runs. If there isn't, we go back 
-to executing the process that called the multithreading library ```idle_tcb``` 
-(as there is nothing left to schedule). Lastly, ```uthread_block()``` deletes 
-the current running thread and starts running the next thread. 
-```uthread_unblock(thread)``` simply adds a thread to the ```ready_queue```.
+to executing the process that called the multithreading library ```idle_tcb```  
+(as there is nothing left to schedule). Lastly, ```uthread_block()``` deletes  
+the current running thread and starts running the next thread.  
+```uthread_unblock(thread)``` simply adds a thread to the ```ready_queue```.  
 
 ## Semaphores
 Semaphores keep track of the number of resources that are allocated towards 
