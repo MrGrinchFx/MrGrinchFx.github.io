@@ -4,7 +4,7 @@ published: 2023-10-01
 description: A simple example of a Markdown blog post.
 tags: [Markdown, Blogging, Demo]
 category: Examples
-draft: false
+draft: true
 ---
 
 # An h1 header
@@ -48,11 +48,6 @@ from the left side). Here's a code sample:
 As you probably guessed, indented 4 spaces. By the way, instead of
 indenting the block, you can use delimited blocks, if you like:
 
-```
-define foobar() {
-    print "Welcome to flavor country!";
-}
-```
 
 (which makes copying & pasting easier). You can optionally mark the
 delimited block for Pandoc to syntax highlight it:
@@ -96,7 +91,7 @@ that last line which continues item 3 above).
 
 Here's a link to [a website](http://foo.bar), to a [local
 doc](local-doc.html), and to a [section heading in the current
-doc](#an-h2-header). Here's a footnote [^1].
+doc](#an-h3-header). Here's a footnote [^1].
 
 [^1]: Footnote text goes here.
 
