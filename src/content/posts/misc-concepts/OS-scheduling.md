@@ -1,7 +1,7 @@
 ---
-title: Multi-Level Feedback Queue Scheduler
+title: "OS Scheduler Implementation"
 published: 2025-12-01
-description: 'Implementation of the MLFQ Job Scheduler'
+description: 'Implementation of a Round Robin Scheduler'
 image: ''
 tags: [operating-systems]
 category: 'programming'
