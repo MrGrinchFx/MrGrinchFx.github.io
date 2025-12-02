@@ -9,7 +9,20 @@ draft: false
 lang: 'en'
 ---
 
- Project 2 - Threading Library
+In Chapter 8 of the virtualization section of the book Operating Systems: Three Easy Pieces, it
+covers the idea of a dyamic scheduler that is able to schedule jobs based on the type of workload.
+For example, larger jobs should be lower in priority since it takes up more of the CPU's time, while
+responsive jobs should be prioritized because it's pivotal that the job is periodically scheduled in
+order to retain some sort of responsivness (i.e responsive for the user). Below is the description
+of my implementation of the MLFQ scheduler described in that chapter. 
+:::note
+The implementation is just the base implementation of the scheduling policy. Further work could
+include varying preemptive timers between the different queues, or perhaps make the scheduler more
+versatile via easily adjustbale queue count for different numbers of hierarchies. The book also
+covered the idea of preventing user programs from gaming the scheduler by making I/O requests right
+before the preempt timer is up. If I have time I may revisit this project and implement those as
+well.
+:::
 
 ## Implementation Overview
 The multithreading library controls the scheduling, creation, yielding, 
