@@ -9,16 +9,17 @@ draft: false
 lang: 'en'
 ---
 
-In Chapter 8 of the virtualization section of the book Operating Systems: Three Easy Pieces, it
-covers the idea of a dyamic scheduler that is able to schedule jobs based on the type of workload.
-For example, larger jobs should be lower in priority since it takes up more of the CPU's time, while
-responsive jobs should be prioritized because it's pivotal that the job is periodically scheduled in
-order to retain some sort of responsivness (i.e responsive for the user). Below is the description
-of my implementation of the MLFQ scheduler described in that chapter. 
+In chapter 7 of Operating Systems: Three Easy Pieces they describe the use of a job scheduler in the
+context of the CPU is pivotal for the functionality of CPU virtualization. I have decided to
+implement a simple scheduler and perhaps in the future build upon it to make it a more robust system
+that caters to differing workload types.
+If you would like to see the implementation yourself, [Here's the Link to the Repo]( https://github.com/MrGrinchFx/OS-scheduler)
+
 :::note
 The implementation is just the base implementation of the scheduling policy. Further work could
-include varying preemptive timers between the different queues, or perhaps make the scheduler more
-versatile via easily adjustbale queue count for different numbers of hierarchies. The book also
+include the implemenation of an MLFQ scheduler, which will have different hierachies of queues to be
+scheduled to the CPU. We could build upon that idea by varying preemptive timers between the different queues, or perhaps make the scheduler more
+versatile via easily adjustable queue count for different numbers of hierarchies. The book also
 covered the idea of preventing user programs from gaming the scheduler by making I/O requests right
 before the preempt timer is up. If I have time I may revisit this project and implement those as
 well.
