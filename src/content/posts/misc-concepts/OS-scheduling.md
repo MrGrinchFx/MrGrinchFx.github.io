@@ -4,7 +4,7 @@ published: 2025-12-01
 description: 'Implementation of a Round Robin Scheduler'
 image: ''
 tags: [operating-systems]
-category: 'programming'
+category: 'Programming'
 draft: false
 lang: 'en'
 ---

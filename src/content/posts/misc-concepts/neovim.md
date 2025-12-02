@@ -4,7 +4,7 @@ published: 2025-11-30
 description: 'My reasons for using Neovim and why I should have converted sooner. Reasons why you should join the right side of history.'
 image: ''
 tags: ['neovim', 'hobbies']
-category: 'hobbies'
+category: 'Hobbies'
 draft: true 
 lang: 'en'
 ---
