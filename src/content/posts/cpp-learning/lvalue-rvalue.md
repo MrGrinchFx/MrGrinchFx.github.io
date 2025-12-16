@@ -8,7 +8,6 @@ category: 'Programming'
 draft: true 
 lang: 'en'
 ---
-
 # What is an lvalue and an rvalue?
 
 lvalue stands for "left" value, and rvalue stands for "right" value. This naming convention
