@@ -15,6 +15,7 @@ Hiked up Mission Peak via the Stanford Trail. Here are some flicks:
 ![Hiking](./images/Mission_P2.JPG)
 ![Sunset Over the Clouds](./images/sun_over_clouds.JPG)
 ![Sunset](./images/sunset.JPG)
+![Fog of War](./images/fog_line.JPG)
 ![Feet Up](./images/feet_up.JPG)
 ![Field of Bliss](./images/field_of_bliss.JPG)
 ![Christmas Tree at the Top](./images/christmas_tree.jpeg)
