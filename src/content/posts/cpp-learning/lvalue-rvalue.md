@@ -141,7 +141,7 @@ When we say data is "moved", it generally means that we don't copy the contents 
 
 It is important to note that for primitive types like int or double, "moving" is effectively the same as "copying" because the data is so small. Move semantics really shine when dealing with large objects that manage their own resources, like ```std::vector``` or ```std::string```.
 
-For example, if we have an lvalue to lvalue situation (i.e., ```std::vector<int> b = a;```), this will introduce a copy operation. If a contains millions of entries, we perform millions of copies. We wouldn't want to copy that data unnecessarily if we don't plan to use a anymore.
+For example, if we have an lvalue to lvalue situation (i.e., ```std::vector<int> b = a;```), this will introduce a copy operation. If ```a``` contains millions of entries, we perform millions of copies. We wouldn't want to copy that data unnecessarily if we don't plan to use ```a``` anymore.
 
 What needs to be done is to allow the lvalue a to become moveable so that we can transfer its internal data pointer to b. This is achieved via the ```std::move()``` method defined in the STL library introduced in C++11.
 
