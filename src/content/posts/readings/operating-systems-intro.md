@@ -12,8 +12,8 @@ lang: 'en'
 
 I have taken an operating systems course during my undergraduate degree, and honestly, it was the
 first class in my undergraduate career where I felt excited to learn. However, it's been a while
-since I've touched this content, and it's kind of embarassing when I watch a Coding Jesus video and
-not knowing off the top of my head what the difference betweene a mutex and semaphore is. And so, I
+since I've touched this content, and it's kind of embarrassing when I watch a Coding Jesus video and
+not knowing off the top of my head what the difference between a mutex and semaphore is. And so, I
 have decided to pick up this wonderful book and perch myself by the fireplace for a good read on
 Operating Systems. Hooray...
 ![Good book](../../../assets/images/a-good-book-can-change-your-life-v0-hstmjd732ama1.jpg)
