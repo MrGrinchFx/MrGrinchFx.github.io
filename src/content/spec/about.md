@@ -1,5 +1,5 @@
 If you are on this page because I am a potential candidate for a position:
-[Click here to Download my Resume updated as of 11/18/25](../../../uploads/Kevin_Le_Resume.pdf)
+[Click here to Download my Resume updated as of 01/17/2026](../../../uploads/Kevin_Le_Resume2.pdf)
 
 If you require more info or would like to reach out for any reason, email me at [2003kevinle@gmail.com](mailto:2003kevinle@gmail.com). I'll respond to you hopefully within a reasonable time.
 
