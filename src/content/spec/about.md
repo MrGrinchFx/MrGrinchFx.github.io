@@ -1,5 +1,5 @@
 If you are on this page because I am a potential candidate for a position:
-[Click here to Download my Resume updated as of 01/17/2026](../../../uploads/Kevin_Le_Resume2.pdf)
+[Click here to Download my Resume updated as of 01/17/2026](https://github.com/MrGrinchFx/MrGrinchFx.github.io/blob/main/src/assets/Kevin_Le_Resume2.pdf)
 
 If you require more info or would like to reach out for any reason, email me at [2003kevinle@gmail.com](mailto:2003kevinle@gmail.com). I'll respond to you hopefully within a reasonable time.
 
@@ -9,7 +9,7 @@ I am a Systems Engineer who has done a little bit of everything: Web Development
 Learning, and Distributed Systems, but I ended up sticking with and appreciating the intricacies of
 low-level systems.
 
-I did my undegraduate and graduate degree at UC Davis and did most of my research on topics
+I did my undergraduate and graduate degree at UC Davis and did most of my research on topics
 involving ML in health applications. I did this work under the supervision of ___ in the ___ Lab.
 
 The purpose of this site is to serve as a log for my recent learnings and personal life events, whether I learned something
