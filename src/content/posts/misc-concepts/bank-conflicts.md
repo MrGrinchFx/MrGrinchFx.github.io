@@ -3,7 +3,7 @@ title: Bank Conflicts in Shared Memory
 published: 2025-11-30
 description: 'Experimenting with Shared Mem Bank Conflicts in GPU programming'
 image: ''
-tags: ['progrmaming', 'cuda', 'gpu']
+tags: ['programming', 'cuda', 'shared memory']
 category: 'Programming'
 draft: true 
 lang: 'en'
@@ -13,7 +13,7 @@ lang: 'en'
 
 In modern GPU architectures, shared memory plays a crucial role in enabling efficient parallel processing. This high-performance, on-chip memory allows threads within a thread block to share data and communicate with each other quickly. Shared memory is organized into a set of memory banks, which allows multiple threads to access memory concurrently. However, understanding and managing bank conflicts is essential to optimize the performance of GPU programs. In this tutorial, we will explore the fundamental concepts of GPU memory banks in shared memory, their importance in parallel processing, and techniques for minimizing bank conflicts to harness the full potential of shared memory.
 
-## Visionlization of Memory Bank
+## Visualization of the Memory Bank
 Take the memory bank in Volta GPUs as an illustrative example.
 In Volta 100, there are 32 banks, each with 4 bytes wide. Therefore:
 - Bandwidth: 4 bytes per bank per clock per SM, thus 128 bytes per clock per SM
@@ -35,13 +35,13 @@ A bank conflict occurs when, inside a **warp**, 2 ore more threads access **diff
 
 There is **no** bank conflict if:
 - Several threads access the same 4-byte word
-- Several threads access differnt bytes of the same 4-byte word
+- Several threads access different bytes of the same 4-byte word
 - Several threads access different banks
 
 ## Lab Section: Memory bank Conflict
 ### First Experiment
-We could test the memory bank conflict by access the shared memory with different stride and measure the time:
-```
+We could test the memory bank conflict by accessing the shared memory with different strides and measure the time:
+```cpp
 template<int N>
 __global__ void test1(int stride, float *out)
 {
@@ -74,8 +74,8 @@ __global__ void test1(int stride, float *out)
         out[i] = shareM[i];
 }
 ```
-We ran the above code with different stride and measure the time:
-```
+We ran the above code with different strides and measured the time:
+```cpp
 for(int stride = 64; stride > 0; stride--) {
     test1<N><<<1, 32>>>(stride, out);
     CUDA_CHECK(cudaDeviceSynchronize());
@@ -107,7 +107,7 @@ There are two ways of allocating shared memory:
 - Dynamic allocation by `extern __shared__ int a[]` where the size of of dynamic shared memory is passed from kernel invocation by bytes.
 
 To study the allocation pattern when both static and dynamic allocation are used, we run following code with different `N`:
-```
+```cpp
 template<int N>
 __global__ void test2()
 {
@@ -131,7 +131,7 @@ __global__ void test2()
 }
 ```
 We run the code with different `N`:
-```
+```cpp
 test2<1><<<1,32, 7*sizeof(float)>>>();
     CUDA_CHECK(cudaDeviceSynchronize());
     printf("----------N: %d-------------\n", 1);
