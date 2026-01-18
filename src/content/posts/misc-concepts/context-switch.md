@@ -5,7 +5,7 @@ description: 'Go over what Context Switching is, and how it functions under the 
 image: ''
 tags: ['operating-systems']
 category: 'Programming'
-draft: true 
+draft: false 
 lang: 'en'
 ---
 
@@ -54,15 +54,40 @@ one query to Gemini 3.0, I learned that in fact I was correct to assume that thi
 of multitasking was bad for a system like a personal computer. But, for web servers such as Node.js
 that typically handle tens of thousands of users concurrently, this would mean that preemptive
 switching between all these user's and their jobs would take up most of the execution time, and
-would be ineffecient. And they get over the hump of the trust in the program, because the server
+would be inefficient. And they get over the hump of the trust in the program, because the server
 developers themselves write the programs, so they trust themselves not to break their own systems.
 I guess the stakes are high if you're working on one of these core programs in a server. One bug
-could shutdown a [shutdown a large chunk of your servers.](https://www.bbc.com/news/articles/cev1en9077ro).
+could [shutdown a large chunk of your servers.](https://www.bbc.com/news/articles/cev1en9077ro)..
 :::
 
 ## Preemptive Multitasking
 
 In a preemptive model, this is a more cynical approach of the two. It can not be assumed that a user
 program would be bug free or not have malicious intent. Therefore, it is the operating system's job
-to ensure that no matter what, periodically, the operating systemd would gain control of the CPU.
+to ensure that no matter what, periodically, the operating system would gain control of the CPU.
+
 How does it do that? Through a periodic interrupt. 
+
+Every so often an interrupt will be called by the OS, thus giving back control of the processor to
+the CPU. This way, the CPU can ensure that their scheduling policies are enforced and reduce the
+amount of process starvation that may occur due to other methods of multitasking, such as a
+cooperative one.
+
+This is the kind of strategy you'll see implemented in popular OS distributions such as Linux and
+Windows, simply because you as the OS designer can not and should not trust third party programs
+that are not written by you or your organization.
+
+:::note
+When an interrupt is issued, what usually happens is that it will immediately call a specific
+handler in the Trap table, (called a trap handler) and will switch to kernel mode as well as save
+core variables like the PC and Stack Pointer.
+:::
+# Context Switching
+
+The OS saves the current register values (e.g., general-purpose registers like `eax`, `ebx`, etc.) 
+into the Process Control Block (PCB) or specifically onto the kernel stack of Process A. The OS
+records where the stack pointer for Process A currently is, so it can find these registers later.
+Once the stack pointer moves, the CPU is effectively "living" in Process B's memory context.
+It loads the values previously saved in Process B's PCB (or kernel stack) back into the physical CPU registers.
+The OS executes a special "return-from-trap" instruction. This restores the Program Counter from Process B's 
+kernel stack and drops the CPU back into user mode.
