@@ -15,7 +15,7 @@ those days, everything was done on the keyboard, so interfacing with the compute
 utilization of the keyboard when programming. Thus the birth of vi was introduced in the 1970s by a
 graduate student at UC Berkeley: Bill Joy (God Bless that man). 
 :::note
-There were other reasons for it's invention, such as speed and effeciency compared to other editor
+There were other reasons for it's invention, such as speed and efficiency compared to other editor
 interfaces at the time, but this particular reason sings to my tactile hungry fingers.
 :::
 
