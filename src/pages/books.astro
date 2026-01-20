@@ -4,15 +4,15 @@ import { getEntry, render } from "astro:content";
 import Markdown from "@components/misc/Markdown.astro";
 import MainGridLayout from "../layouts/MainGridLayout.astro";
 
-const projectPost = await getEntry("spec", "projects");
+const bookPost = await getEntry("spec", "books");
 
-if (!projectPost) {
+if (!bookPost) {
 	throw new Error("Project page content not found");
 }
 
-const { Content } = await render(projectPost);
+const { Content } = await render(bookPost);
 ---
-<MainGridLayout title={"projects"} >
+<MainGridLayout title={"bookPost"} >
     <div class="flex w-full rounded-[var(--radius-large)] overflow-hidden relative min-h-32">
         <div class="card-base z-10 px-9 py-6 relative w-full ">
             <Markdown class="mt-2">
