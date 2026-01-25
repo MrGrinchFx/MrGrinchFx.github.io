@@ -7,10 +7,11 @@ If you require more info or would like to reach out for any reason, email me at 
 
 I am a Systems Engineer who has done a little bit of everything: Web Development, Robotics, Machine
 Learning, and Distributed Systems, but I ended up sticking with and appreciating the intricacies of
-low-level systems.
+low-level systems and performance analysis.
 
-I did my undergraduate and graduate degree at UC Davis and did most of my research on topics
-involving ML in health applications. I did this work under the supervision of ___ in the ___ Lab.
+I did my undergraduate and graduate degree at UC Davis and did my research on topics
+involving ML in health applications. I did this work under the supervision of Professor Chen Nee
+Chuah in the RUbiNet Lab.
 
 The purpose of this site is to serve as a log for my recent learnings and personal life events, whether I learned something
 extremely interesting from an article or paper I read, or I had a really good sandwich that
